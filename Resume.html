@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kunjal Patil - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #1c1c1c;
+      padding: 10px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #00e6e6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #66ffff;
+    }
+
+    header {
+      background: #182c37;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 4px solid #00cccc;
+    }
+
+    .header-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .header-text h1 {
+      font-size: 2.2rem;
+      color: #00ffff;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #a0e7e5;
+      margin-top: 10px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00ffff;
+      box-shadow: 0 4px 20px rgba(0,255,255,0.3);
+      margin-left: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: #1f2a35;
+      border-left: 5px solid #00cccc;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,255,255,0.1);
+    }
+
+    .card h2 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .language-badges span {
+      background: #00b3b3;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 5px;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .resume-btn {
+      background-color: #00e6e6;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 20px auto;
+    }
+
+    .resume-btn:hover {
+      background-color: #66ffff;
+    }
+
+    footer {
+      background: #1c1c1c;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+      }
+
+      .profile-pic {
+        margin: 20px 0 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .card {
+        padding: 15px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px 10px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- Header -->
+<header>
+  <div class="header-text">
+    <h1>Kunjal Patil</h1>
+    <p class="subtitle">Aspiring Software Engineer | Second Year Engineering Student | Thane, India</p>
+  </div>
+  <img src="RESUME-IMG.jpeg" alt="Kunjal Patil" class="profile-pic" />
+</header>
+
+<div class="container">
+
+  <!-- About -->
+  <div class="card" id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Kunjal, a second-year Computer Engineering student. I enjoy creating digital experiences, whether through websites, games, or solving real-world problems. I believe in continuous learning and love taking part in challenges like hackathons.</p>
+  </div>
+
+  <!-- Skills -->
+  <div class="card" id="skills">
+    <h2>Software Skills</h2>
+    <ul>
+      <li>HTML5, CSS3, JavaScript</li>
+      <li>Java Programming</li>
+      <li>Responsive Web Design</li>
+      <li>Git & GitHub</li>
+      <li>MS Office, Canva, Figma (Basic)</li>
+    </ul>
+  </div>
+
+  <!-- Projects -->
+  <div class="card" id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>2D & 3D Games:</strong> Developed simple interactive games using web and Unity basics.</li>
+      <li><strong>Hackathon Prototype:</strong> Selected in the internal college hackathon. Built a smart campus navigation app with a team.</li>
+      <li><strong>Personal Portfolio Website:</strong> Built using HTML, CSS, and JS to showcase skills and projects.</li>
+      <li><strong>To-Do List App:</strong> A lightweight task app using JavaScript for daily task tracking.</li>
+      <li><strong>Calculator App:</strong> Functional UI calculator made with clean design and JavaScript logic.</li>
+    </ul>
+  </div>
+
+  <!-- Education -->
+  <div class="card" id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech in Computer Engineering</strong> – 2024–2028<br>Shah And Anchor Kutchii Engineering College, Mumbai</li>
+      <li><strong>HSC</strong> – 2022–2024<br>MH Junior College, Thane</li>
+    </ul>
+  </div>
+
+  <!-- Languages -->
+  <div class="card">
+    <h2>Languages</h2>
+    <div class="language-badges">
+      <span>English (Fluent)</span>
+      <span>Hindi (Fluent)</span>
+      <span>Marathi (Native)</span>
+    </div>
+  </div>
+
+  <!-- Hobbies -->
+  <div class="card">
+    <h2>Hobbies & Interests</h2>
+    <ul>
+      <li>Sketching & Art</li>
+      <li>Listening to Music</li>
+      <li>Reading Tech Blogs</li>
+      <li>Game Design & Development</li>
+    </ul>
+  </div>
+
+  <!-- Contact -->
+  <div class="card contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:kunjalpatil@email.com">kunjalpatil@email.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/kunjalpatil" target="_blank">linkedin.com/in/kunjalpatil</a></p>
+    <p>GitHub: <a href="https://github.com/kunjalpatil" target="_blank">github.com/kunjalpatil</a></p>
+  </div>
+
+  <!-- Resume Download -->
+  <div style="text-align: center;">
+    <a href="Kunjal_Patil_Resume.pdf" download class="resume-btn">Download Resume (PDF)</a>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Kunjal Patil. Designed with ❤️
+</footer>
+
+</body>
+</html>
